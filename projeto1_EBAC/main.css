@@ -83,16 +83,16 @@ section p {
     margin-right: 32px;
 }
 
-.Social-links img {
+.social-links img {
     height: 24px;
 }
 
-.Social-links li {
+.social-links li {
     display: inline;
     margin-right: 8px;
 }
 
-.Social-links li a {
+.social-links li a {
     text-decoration: none;
 }
 
@@ -102,7 +102,13 @@ section p {
 
 .contact-methods {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
+    }
+
+.contact-methods > div {
+    flex: 1;
+    margin-right: 16px;
 }
 
 form input,
@@ -138,4 +144,8 @@ footer {
     background-color: #182c61;
     color: #ecf0f1;
     padding: 16px;
+}
+
+footer .container {
+    text-align: center;
 }
